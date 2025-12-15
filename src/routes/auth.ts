@@ -12,7 +12,7 @@ router.get(
   '/google/callback',
   passport.authenticate('google', { failureRedirect: '/login' }),
   (req, res) => {
-    res.redirect(process.env.FRONTEND_URL || 'http://localhost:3000');
+    res.redirect(String(process.env.FRONTEND_URL));
   }
 );
 

@@ -31,7 +31,7 @@ Required environment variables:
 - `SESSION_SECRET` - A random string for session encryption
 - `GOOGLE_CLIENT_ID` - Your Google OAuth client ID
 - `GOOGLE_CLIENT_SECRET` - Your Google OAuth client secret
-- `FRONTEND_URL` - URL of your frontend application (default: http://localhost:3000)
+- `FRONTEND_URL` - URL of your frontend application
 - `PORT` - Server port (default: 3001)
 
 ### Running with Docker
