@@ -16,7 +16,6 @@ services:
   # Backend API
   backend:
     build:
-      context: ./backend
       dockerfile: Dockerfile
     container_name: backend-api
     restart: unless-stopped
