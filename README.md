@@ -39,7 +39,7 @@ Required environment variables:
 Build and start the container:
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
 The API will be available at `http://localhost:3001`
