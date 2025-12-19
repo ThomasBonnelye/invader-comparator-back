@@ -9,7 +9,7 @@ services:
     volumes:
       - mongo_data:/data/db
     environment:
-      MONGO_INITDB_DATABASE: your-database-name
+      MONGO_INITDB_DATABASE: invaders-db
     networks:
       - backend-network
 
@@ -24,7 +24,7 @@ services:
     environment:
       - NODE_ENV=production
       - PORT=3001
-      - MONGODB_URI=mongodb://mongo:27017/your-database-name
+      - MONGODB_URI=mongodb://mongo:27017/invaders-db
       - SESSION_SECRET=${SESSION_SECRET}
       - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
       - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
